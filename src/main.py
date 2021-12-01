@@ -1,9 +1,10 @@
-from src.utility.read_from_file import read_list_from_file
+from src.solutions.day1 import get_part1_answer
+from src.utility.read_from_file import read_list_from_file_as_int
 
 
 def run_puzzles():
-    read_list_from_file("input/day1_part1_test_input.txt")
-
+    input = read_list_from_file_as_int("input/day1_part1_real_input.txt")
+    get_part1_answer(input)
 
 if __name__ == '__main__':
     run_puzzles()
