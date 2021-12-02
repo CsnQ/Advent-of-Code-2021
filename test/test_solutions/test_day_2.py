@@ -1,4 +1,4 @@
-from src.solutions.day2 import create_tuple_list_from_input, get_part_1
+from src.solutions.day2 import create_tuple_list_from_input, get_part_1, get_part_2
 
 
 class TestDay2:
@@ -22,4 +22,16 @@ class TestDay2:
 
         expected_result = 150
         actual_result = get_part_1(test_data)
+        assert actual_result == expected_result
+
+    def test_get_part_2(self):
+        test_data = ['forward 5',
+                     'down 5',
+                     'forward 8',
+                     'up 3',
+                     'down 8',
+                     'forward 2']
+
+        expected_result = 900
+        actual_result = get_part_2(test_data)
         assert actual_result == expected_result
