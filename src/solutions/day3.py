@@ -1,10 +1,5 @@
-import math
+from typing import List
 
-from typing import List, Dict
-
-
-# 00100
-# 11110
 
 def create_vertical_list(digits: List[str]) -> List[str]:
     # I know that all the digits are the same length in my data set otherwise
