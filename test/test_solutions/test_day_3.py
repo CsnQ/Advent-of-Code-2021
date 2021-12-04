@@ -1,5 +1,5 @@
-from src.solutions.day3 import create_vertical_list, get_frequencies, get_rate, convert_to_int, \
-    convert_gamma_and_epsilon, calculate_energy_consumption, get_day3_part_1
+from src.solutions.day3 import create_vertical_list, get_frequencies, get_rate, convert_binary_to_int, \
+    convert_gamma_and_epsilon, calculate_energy_consumption, get_day3_part_1, get_oxygen_value, get_day3_part_2
 
 
 class TestDay3:
@@ -55,7 +55,7 @@ class TestDay3:
     def test_convert_to_int(self):
         test_data = [1, 0, 1]
         expected_result = 5
-        actual_result = convert_to_int(test_data)
+        actual_result = convert_binary_to_int(test_data)
         assert expected_result == actual_result
 
     # 10110 = 22
@@ -89,4 +89,36 @@ class TestDay3:
         actual_result = get_day3_part_1(test_data)
         assert expected_result == actual_result
 
+    def test_get_oxygen_value(self):
+        test_data = ['00100',
+                     '11110',
+                     '10110',
+                     '10111',
+                     '10101',
+                     '01111',
+                     '00111',
+                     '11100',
+                     '10000',
+                     '11001',
+                     '00010',
+                     '01010']
+        expected_result = '10111'
+        actual_result = get_oxygen_value(test_data)
+        assert expected_result == actual_result
 
+    def test_get_result(self):
+        test_data = ['00100',
+                     '11110',
+                     '10110',
+                     '10111',
+                     '10101',
+                     '01111',
+                     '00111',
+                     '11100',
+                     '10000',
+                     '11001',
+                     '00010',
+                     '01010']
+        expected_result = 230
+        actual_result = get_day3_part_2(test_data)
+        assert expected_result == actual_result

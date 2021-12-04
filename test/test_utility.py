@@ -1,4 +1,5 @@
-from src.utility.read_from_file import read_list_from_file_as_int, read_list_from_file_as_string
+from src.utility.read_from_file import read_list_from_file_as_int,\
+    read_list_from_file_as_string
 
 
 class TestUtility:
