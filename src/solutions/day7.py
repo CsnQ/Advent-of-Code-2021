@@ -9,11 +9,6 @@ class FuelCalculator:
     def __init__(self, puzzle_input: List[int]):
         self.crabs = puzzle_input
 
-    def find_min_and_max(self) -> tuple:
-        print(self.crabs)
-        self.crabs.sort()
-        return self.crabs[0], self.crabs[-1]
-
     def get_single_calculation(self, position) -> int:
         result = []
         for crab in self.crabs:
