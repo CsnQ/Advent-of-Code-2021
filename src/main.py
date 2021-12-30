@@ -4,6 +4,7 @@ from src.solutions.day2 import get_part_1, get_part_2
 from src.solutions.day6.day6 import get_day6_part1
 from src.solutions.day6.day6pt2 import get_day6_part2
 from src.solutions.day7.day7pt1 import get_day7_part1
+from src.solutions.day7.day7pt2 import get_day7_part2
 from src.utility.read_from_file import read_list_from_file_as_int, read_list_from_file_as_string
 
 
@@ -27,6 +28,7 @@ def run_puzzles():
 
     print("day 7 answers:")
     get_day7_part1(day7_input)
+    get_day7_part2(day7_input)
     print("*************************************************")
 
 
