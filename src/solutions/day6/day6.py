@@ -49,7 +49,6 @@ class LanternfishSim:
 
     def run_sim(self) -> int:
         for x in range(self.days_to_sim):
-            print(x, len(self.list_of_lanternFish))
             self._execute_sim_for_one_day()
         result = len(self.list_of_lanternFish)
         print(result)

@@ -26,10 +26,8 @@ class TestLanternfishSim:
 
     def test_execute_sim_for_one_day(self, multi_day_sim):
         day_1 = multi_day_sim._execute_sim_for_one_day()
-        print(day_1)
         assert day_1 == [2, 3, 2, 0, 1]
         day_2 = multi_day_sim._execute_sim_for_one_day()
-        print(day_2)
         assert day_2 == [1, 2, 1, 6, 0, 8]
 
     def test_run_sim_18_days(self):
